@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Pill gradients -->
+    <radialGradient id="b1" cx="38%" cy="32%" r="58%">
+      <stop offset="0%" stop-color="#6AAEE8"/><stop offset="30%" stop-color="#4090D0"/>
+      <stop offset="60%" stop-color="#2A6CB5"/><stop offset="100%" stop-color="#1B5080"/>
+    </radialGradient>
+    <radialGradient id="w1" cx="42%" cy="33%" r="56%">
+      <stop offset="0%" stop-color="#F8F8FA"/><stop offset="25%" stop-color="#ECEAEF"/>
+      <stop offset="60%" stop-color="#D5D3DA"/><stop offset="100%" stop-color="#A8A6B0"/>
+    </radialGradient>
+    <radialGradient id="y1" cx="36%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#F2DD72"/><stop offset="30%" stop-color="#E0C848"/>
+      <stop offset="65%" stop-color="#C4A52A"/><stop offset="100%" stop-color="#9A7E18"/>
+    </radialGradient>
+    <radialGradient id="pk1" cx="40%" cy="34%" r="55%">
+      <stop offset="0%" stop-color="#F0A8A0"/><stop offset="35%" stop-color="#DC7E75"/>
+      <stop offset="100%" stop-color="#A84D48"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="38%" cy="30%" r="58%">
+      <stop offset="0%" stop-color="#82D8A4"/><stop offset="35%" stop-color="#58C080"/>
+      <stop offset="100%" stop-color="#2D7A48"/>
+    </radialGradient>
+    <radialGradient id="b2" cx="35%" cy="28%" r="60%">
+      <stop offset="0%" stop-color="#70B8F0"/><stop offset="35%" stop-color="#4898D8"/>
+      <stop offset="100%" stop-color="#1E6098"/>
+    </radialGradient>
+    <!-- Xanax bar - realistic off-white with warmth -->
+    <linearGradient id="xanG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5F2F6"/><stop offset="30%" stop-color="#EAE6EE"/>
+      <stop offset="70%" stop-color="#D8D4DE"/><stop offset="100%" stop-color="#C0BCC8"/>
+    </linearGradient>
+    <linearGradient id="xanSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0DDE5"/><stop offset="100%" stop-color="#B0ACB8"/>
+    </linearGradient>
+    <!-- Iodine -->
+    <linearGradient id="ioBot" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6B3A10"/><stop offset="50%" stop-color="#4A2508"/>
+      <stop offset="100%" stop-color="#3A1E08"/>
+    </linearGradient>
+    <linearGradient id="ioLiq" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D06818"/><stop offset="100%" stop-color="#883505"/>
+    </linearGradient>
+    <linearGradient id="ioCap" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F0E8D8"/><stop offset="100%" stop-color="#B0A888"/>
+    </linearGradient>
+    <!-- Capsule fills -->
+    <linearGradient id="cBlu" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#5EAAE0"/><stop offset="100%" stop-color="#2670A8"/>
+    </linearGradient>
+    <linearGradient id="cWht" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#F0EEF2"/><stop offset="100%" stop-color="#B8B6C0"/>
+    </linearGradient>
+    <linearGradient id="cRed" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#E05848"/><stop offset="100%" stop-color="#A83028"/>
+    </linearGradient>
+    <!-- Shines -->
+    <radialGradient id="sh1" cx="33%" cy="28%" r="28%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.3"/><stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sh2" cx="30%" cy="25%" r="32%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.25"/><stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="shCap" cx="28%" cy="22%" r="35%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.22"/><stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Rx glow -->
+    <radialGradient id="rxGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF2020" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FF0000" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Text -->
+    <linearGradient id="tG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF"/><stop offset="100%" stop-color="#0060EE"/>
+    </linearGradient>
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0  0 0.25 0 0 0  0 0 1 0 0  0 0 0 0.45 0" result="g"/>
+      <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="rxBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="0 0 0 0 0.8  0 0 0 0 0  0 0 0 0 0  0 0 0 0.15 0" result="rg"/>
+      <feMerge><feMergeNode in="rg"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="d1"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/></filter>
+    <filter id="d2"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000" flood-opacity="0.42"/></filter>
+    <filter id="d3"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.38"/></filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#091828" stroke-width="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- BG -->
+  <rect width="400" height="400" rx="14" fill="#050E1A"/>
+  <rect width="400" height="400" rx="14" fill="url(#grid)" opacity="0.3"/>
+  <ellipse cx="195" cy="200" rx="170" ry="150" fill="#003880" opacity="0.04"/>
+
+  <!-- ====== BIG RED Rx BACKGROUND ====== -->
+  <ellipse cx="200" cy="240" rx="130" ry="120" fill="url(#rxGlow)"/>
+  <g filter="url(#rxBlur)">
+    <text x="200" y="305" font-family="'Georgia','Times New Roman',serif" font-size="280" font-weight="700" fill="#C02020" text-anchor="middle" opacity="0.13" letter-spacing="-15">Rx</text>
+  </g>
+
+  <!-- ====== IODINE BOTTLE (left side) ====== -->
+  <g filter="url(#d2)" transform="translate(50,152) rotate(-6)">
+    <!-- Bottle body -->
+    <rect x="-15" y="-24" width="30" height="48" rx="4.5" fill="url(#ioBot)"/>
+    <!-- Liquid -->
+    <rect x="-11" y="-4" width="22" height="25" rx="2" fill="url(#ioLiq)" opacity="0.55"/>
+    <!-- Label -->
+    <rect x="-12" y="-20" width="24" height="15" rx="1.5" fill="#EAE0CC" opacity="0.75"/>
+    <text x="0" y="-10" font-family="'Helvetica Neue',Arial,sans-serif" font-size="5.5" font-weight="700" fill="#3A2010" text-anchor="middle" opacity="0.85">IODINE</text>
+    <text x="0" y="-4" font-family="'Helvetica Neue',Arial,sans-serif" font-size="3" font-weight="400" fill="#5A4030" text-anchor="middle" opacity="0.5">2% SOL</text>
+    <!-- Cap -->
+    <rect x="-9" y="-33" width="18" height="11" rx="3" fill="url(#ioCap)"/>
+    <line x1="-9" y1="-28" x2="9" y2="-28" stroke="#98907A" stroke-width="0.4" opacity="0.5"/>
+    <line x1="-9" y1="-26" x2="9" y2="-26" stroke="#98907A" stroke-width="0.4" opacity="0.4"/>
+    <!-- Bottle shine -->
+    <rect x="-13" y="-22" width="5" height="35" rx="2" fill="white" opacity="0.07"/>
+    <rect x="-15" y="-24" width="30" height="48" rx="4.5" fill="none" stroke="#2A1505" stroke-width="0.5" opacity="0.45"/>
+  </g>
+
+  <!-- ====== XANAX BAR #1 (upper area) - NO TEXT, bolder lines ====== -->
+  <g filter="url(#d2)" transform="translate(152,70) rotate(-14)">
+    <rect x="-34" y="-9" width="68" height="18" rx="2.8" fill="url(#xanG)"/>
+    <rect x="-34" y="-9" width="68" height="18" rx="2.8" fill="url(#shCap)"/>
+    <!-- Bolder score lines -->
+    <line x1="-17" y1="-8" x2="-17" y2="8" stroke="#9898A8" stroke-width="1.2" opacity="0.55"/>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#9898A8" stroke-width="1.2" opacity="0.55"/>
+    <line x1="17" y1="-8" x2="17" y2="8" stroke="#9898A8" stroke-width="1.2" opacity="0.55"/>
+    <!-- Subtle bevel top edge -->
+    <line x1="-32" y1="-8" x2="32" y2="-8" stroke="white" stroke-width="0.5" opacity="0.15"/>
+    <!-- Bottom shadow edge -->
+    <line x1="-32" y1="8" x2="32" y2="8" stroke="#8080A0" stroke-width="0.5" opacity="0.2"/>
+    <rect x="-34" y="-9" width="68" height="18" rx="2.8" fill="none" stroke="#B5B2BC" stroke-width="0.5" opacity="0.3"/>
+  </g>
+
+  <!-- ====== XANAX BAR #2 (lower right) - NO TEXT, bolder lines ====== -->
+  <g filter="url(#d3)" transform="translate(288,352) rotate(18)">
+    <rect x="-30" y="-8" width="60" height="16" rx="2.5" fill="url(#xanG)"/>
+    <rect x="-30" y="-8" width="60" height="16" rx="2.5" fill="url(#shCap)"/>
+    <line x1="-15" y1="-7" x2="-15" y2="7" stroke="#9898A8" stroke-width="1.1" opacity="0.5"/>
+    <line x1="0" y1="-7" x2="0" y2="7" stroke="#9898A8" stroke-width="1.1" opacity="0.5"/>
+    <line x1="15" y1="-7" x2="15" y2="7" stroke="#9898A8" stroke-width="1.1" opacity="0.5"/>
+    <line x1="-28" y1="-7" x2="28" y2="-7" stroke="white" stroke-width="0.4" opacity="0.12"/>
+    <line x1="-28" y1="7" x2="28" y2="7" stroke="#8080A0" stroke-width="0.4" opacity="0.18"/>
+    <rect x="-30" y="-8" width="60" height="16" rx="2.5" fill="none" stroke="#B5B2BC" stroke-width="0.4" opacity="0.25"/>
+  </g>
+
+  <!-- ====== PILLS ====== -->
+
+  <!-- 1. Main blue round 30 -->
+  <g filter="url(#d1)" transform="translate(200,120) rotate(-3)">
+    <circle cx="0" cy="0" r="38" fill="url(#b1)"/>
+    <circle cx="0" cy="0" r="38" fill="url(#sh1)"/>
+    <line x1="-36" y1="1" x2="36" y2="-1" stroke="#185070" stroke-width="1.6" opacity="0.5"/>
+    <circle cx="0" cy="0" r="37" fill="none" stroke="#1A5070" stroke-width="0.6" opacity="0.3"/>
+    <text x="0" y="16" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" fill="#1A5080" text-anchor="middle" opacity="0.45">30</text>
+    <ellipse cx="-11" cy="-18" rx="6" ry="3" fill="white" opacity="0.07" transform="rotate(-22 -11 -18)"/>
+  </g>
+
+  <!-- 2. White round 5 -->
+  <g filter="url(#d3)" transform="translate(72,48) rotate(-18)">
+    <circle cx="0" cy="0" r="18" fill="url(#w1)"/>
+    <circle cx="0" cy="0" r="18" fill="url(#sh2)"/>
+    <line x1="-16" y1="0.5" x2="16" y2="-0.5" stroke="#8A88A0" stroke-width="1.1" opacity="0.4"/>
+    <text x="0" y="10" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="800" fill="#8282A0" text-anchor="middle" opacity="0.4">5</text>
+  </g>
+
+  <!-- 3. Yellow oblong 10/325 -->
+  <g filter="url(#d2)" transform="translate(338,90) rotate(22)">
+    <rect x="-26" y="-12" width="52" height="24" rx="12" fill="url(#y1)"/>
+    <rect x="-26" y="-12" width="52" height="24" rx="12" fill="url(#shCap)"/>
+    <line x1="0" y1="-11" x2="0" y2="11" stroke="#8A7218" stroke-width="1.1" opacity="0.4"/>
+    <text x="0" y="3.5" font-family="'Helvetica Neue',Arial,sans-serif" font-size="6.5" font-weight="700" fill="#887018" text-anchor="middle" opacity="0.4">10/325</text>
+    <rect x="-26" y="-12" width="52" height="24" rx="12" fill="none" stroke="#A89028" stroke-width="0.4" opacity="0.2"/>
+  </g>
+
+  <!-- 4. Pink round 10 -->
+  <g filter="url(#d3)" transform="translate(358,195) rotate(7)">
+    <circle cx="0" cy="0" r="17" fill="url(#pk1)"/>
+    <circle cx="0" cy="0" r="17" fill="url(#sh2)"/>
+    <line x1="-15" y1="0" x2="15" y2="0.5" stroke="#803535" stroke-width="1" opacity="0.4"/>
+    <text x="0" y="10" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" font-weight="800" fill="#883535" text-anchor="middle" opacity="0.38">10</text>
+  </g>
+
+  <!-- 5. Blue & white capsule -->
+  <g filter="url(#d2)" transform="translate(372,280) rotate(32)">
+    <rect x="-11" y="-25" width="22" height="50" rx="11" fill="url(#cWht)"/>
+    <clipPath id="cc1"><rect x="-11" y="-25" width="22" height="25"/></clipPath>
+    <rect x="-11" y="-25" width="22" height="50" rx="11" fill="url(#cBlu)" clip-path="url(#cc1)"/>
+    <rect x="-11" y="-25" width="22" height="50" rx="11" fill="url(#shCap)"/>
+    <line x1="-9" y1="0" x2="9" y2="0" stroke="#4080A0" stroke-width="0.8" opacity="0.35"/>
+  </g>
+
+  <!-- 6. Green round 15 -->
+  <g filter="url(#d3)" transform="translate(88,318) rotate(-12)">
+    <circle cx="0" cy="0" r="16" fill="url(#g1)"/>
+    <circle cx="0" cy="0" r="16" fill="url(#sh2)"/>
+    <line x1="-14" y1="0.3" x2="14" y2="-0.3" stroke="#1C5028" stroke-width="1" opacity="0.4"/>
+    <text x="0" y="10" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8.5" font-weight="800" fill="#1A5028" text-anchor="middle" opacity="0.38">15</text>
+  </g>
+
+  <!-- 7. Red & white capsule -->
+  <g filter="url(#d3)" transform="translate(38,255) rotate(-25)">
+    <rect x="-10" y="-22" width="20" height="44" rx="10" fill="url(#cWht)"/>
+    <clipPath id="cc2"><rect x="-10" y="-22" width="20" height="22"/></clipPath>
+    <rect x="-10" y="-22" width="20" height="44" rx="10" fill="url(#cRed)" clip-path="url(#cc2)"/>
+    <rect x="-10" y="-22" width="20" height="44" rx="10" fill="url(#shCap)"/>
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#983838" stroke-width="0.7" opacity="0.3"/>
+  </g>
+
+  <!-- 8. White oblong 5/325 -->
+  <g filter="url(#d3)" transform="translate(168,368) rotate(8)">
+    <rect x="-18" y="-8" width="36" height="16" rx="8" fill="url(#w1)"/>
+    <rect x="-18" y="-8" width="36" height="16" rx="8" fill="url(#shCap)"/>
+    <line x1="0" y1="-7" x2="0" y2="7" stroke="#8888A0" stroke-width="0.9" opacity="0.35"/>
+    <text x="0" y="3" font-family="'Helvetica Neue',Arial,sans-serif" font-size="5.5" font-weight="700" fill="#7E7E9A" text-anchor="middle" opacity="0.38">5/325</text>
+  </g>
+
+  <!-- 9. Tiny blue round 20 -->
+  <g filter="url(#d3)" transform="translate(278,42) rotate(11)">
+    <circle cx="0" cy="0" r="12" fill="url(#b2)"/>
+    <circle cx="0" cy="0" r="12" fill="url(#sh2)"/>
+    <line x1="-10" y1="0" x2="10" y2="0.3" stroke="#185070" stroke-width="0.8" opacity="0.4"/>
+    <text x="0" y="7" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7" font-weight="800" fill="#185070" text-anchor="middle" opacity="0.38">20</text>
+  </g>
+
+  <!-- 10. Tiny pink -->
+  <g filter="url(#d3)" transform="translate(40,340) rotate(-5)">
+    <circle cx="0" cy="0" r="9" fill="url(#pk1)"/>
+    <circle cx="0" cy="0" r="9" fill="url(#sh2)"/>
+  </g>
+
+  <!-- 11. Extra tiny white -->
+  <g filter="url(#d3)" transform="translate(362,145) rotate(14)">
+    <circle cx="0" cy="0" r="11" fill="url(#w1)"/>
+    <circle cx="0" cy="0" r="11" fill="url(#sh2)"/>
+    <line x1="-9" y1="0" x2="9" y2="0" stroke="#8585A0" stroke-width="0.8" opacity="0.35"/>
+  </g>
+
+  <!-- ====== PERC.GG TEXT ====== -->
+  <g filter="url(#glow)">
+    <text x="198" y="252" font-family="'Impact','Arial Black',sans-serif" font-size="66" font-weight="900" fill="url(#tG)" text-anchor="middle" letter-spacing="3">PERC<tspan fill="#00C4F8" opacity="0.88">.GG</tspan></text>
+  </g>
+
+  <rect x="108" y="266" width="185" height="1.8" rx="0.9" fill="url(#tG)" opacity="0.28"/>
+</svg>
